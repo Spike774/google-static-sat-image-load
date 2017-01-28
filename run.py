@@ -64,11 +64,11 @@ for v in a[flag:]:
 
     print 'now saving... {0}/{1} ...'.format(i, total_num)
 
-    urllib.urlretrieve(url, "image_cache\sate_c_{0}_{1}_z_16.png".format(lat, lon))
+    urllib.urlretrieve(url, "image_cache/sate_c_{0}_{1}_z_16.png".format(lat, lon))
 
     with open('scan_coords.csv', 'ab') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow([i, "image_cache\sate_c_{0}_{1}_z_16.png".format(lat, lon), lat, lon])
+        writer.writerow([i, "image_cache/sate_c_{0}_{1}_z_16.png".format(lat, lon), lat, lon])
 
     i += 1
 

@@ -54,3 +54,6 @@ Temporary Items
 
 # virtual venv
 venv
+
+# pycharm file
+.idea
